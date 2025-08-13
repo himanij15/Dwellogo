@@ -1,0 +1,31 @@
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-trigger {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+[data-state='open'] > .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-inner {
+  padding: 0.5rem 0;
+}
